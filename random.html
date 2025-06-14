@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рандомайзер</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body class="second">
+     <header>
+        <ul>
+            <li><a href="index.html">Все правила</a></li>
+            <li><a href="index.html#about">О нас</a></li>
+            <li><a href="random.html">Рандомайзер</a></li>
+            <button class="cool" id='confettiButton'>Нажми меня</button>
+            <button class="upup1"><a href="#up">вверх</a></button>
+        </ul>
+    </header>
+    <h1>Рандомайзер!</h1>
+    <h2>Узнайте сегодняшнее ваше правило!</h2>
+    <h3>Зачет или незачет? Давайте же узнаем</h3>
+    <section id="random">
+           <button class="btn" id="generateBtn">
+             Кнопка
+           </button>
+            <div id="result"></div>
+           
+    </section>
+</body>
+<script>
+        const numbers = [24, 5, 23, 13, 34, 43, 15];
+        const generateBtn = document.getElementById('generateBtn');
+        const resultElement = document.getElementById('result');
+
+        generateBtn.addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * numbers.length);
+            const randomNumber = numbers[randomIndex];
+            resultElement.textContent = `Ваша цифра: ${randomNumber}`;
+            generateBtn.style.display = 'none';
+            // Также выводим в консоль, как в вашем примере
+            console.log(randomIndex, randomNumber);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>document.getElementById('confettiButton').addEventListener('click', function() {
+    confetti({
+        particleCount: 150,
+        spread: 90,
+        origin: { y: 0.6 }
+    });
+});</script>
+</html>
