@@ -35,7 +35,7 @@ const resultElement = document.getElementById('result');
 
 generateBtn.addEventListener('click', function() {
     // Создаем массив из 100 возможных чисел (от 1 до 100)
-    const possibleNumbers = Array.from({length: 100}, (_, i) => i + 1);
+    const possibleNumbers = Array.from({length: 43}, (_, i) => i + 1);
     
     // Выбираем случайный индекс
     const randomIndex = Math.floor(Math.random() * possibleNumbers.length);
@@ -43,7 +43,7 @@ generateBtn.addEventListener('click', function() {
     // Получаем случайное число по этому индексу
     const randomNumber = possibleNumbers[randomIndex];
     
-    resultElement.textContent = `Ваше случайное число: ${randomNumber}`;
+    resultElement.textContent = `Ваше правило: ${randomNumber}`;
     generateBtn.style.display = 'none';
     
     // Выводим индекс и число в консоль (как в оригинале)
