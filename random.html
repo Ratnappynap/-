@@ -32,15 +32,14 @@
         const generateBtn = document.getElementById('generateBtn');
 const resultElement = document.getElementById('result');
 
-generateBtn.addEventListener('click', function() {
-    // Генерируем случайное число между 1 и 100 (можно изменить диапазон)
-    const randomNumber = Math.floor(Math.random() * 43) + 1;
-    resultElement.textContent = `Ваше правило: ${randomNumber}`;
+generateBtn.addEventListener('click', function() 
+    const possibleNumbers = Array.from({length: 43}, (_, i) => i + 1);
+    const randomIndex = Math.floor(Math.random() * possibleNumbers.length);
+    const randomNumber = possibleNumbers[randomIndex];
+    resultElement.textContent = `Ваше случайное число: ${randomNumber}`;
     generateBtn.style.display = 'none';
-    // Выводим в консоль
+
     console.log(randomIndex, randomNumber);
-‎       
-‎
 });‎
     </script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
