@@ -29,14 +29,17 @@
     </section>
 </body>
 <script>
-        function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
+        const generateBtn = document.getElementById('generateBtn');
+const resultElement = document.getElementById('result');
 
-console.log(getRandomInt(44));
-// Expected output: 0, 1 or 2
-
-
+generateBtn.addEventListener('click', function() {
+    // Генерируем случайное число между 1 и 100 (можно изменить диапазон)
+    const randomNumber = Math.floor(Math.random() * 43) + 1;
+    resultElement.textContent = `Ваше правило: ${randomNumber}`;
+    generateBtn.style.display = 'none';
+    // Выводим в консоль
+    console.log(randomNumber);
+});‎
     </script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script>document.getElementById('confettiButton').addEventListener('click', function() {
