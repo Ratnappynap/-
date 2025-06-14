@@ -174,7 +174,7 @@ table.iksweb th {
         width: 500px;
     }
     img{
-        width: 350px;
+       width: 100%;
     }
     table.iksweb{
         width: 500px;
@@ -193,6 +193,8 @@ table.iksweb th {
     }
 .second{
     margin: 0;
+    padding-top: 50px;
+    padding-left: 20px;
 }
     
 }
@@ -211,7 +213,7 @@ table.iksweb th {
         width: 300px;
     }
     img{
-        width: 340px;
+        width: 100%;
     }
     header{
         width: 90%;
@@ -227,6 +229,8 @@ table.iksweb th {
     }
 .second{
     margin: 0;
+     padding-top: 50px;
+    padding-left: 20px;
 }
 
 }
