@@ -174,14 +174,14 @@ table.iksweb th {
         width: 500px;
     }
     img{
-        width: 200px;
+        width: 350px;
     }
-    table{
+    table.iksweb{
         width: 500px;
     }
     header{
         width: 90%;
-        height: 500px;
+        
     }
     .bloch{
         width: 100%;
@@ -207,15 +207,15 @@ table.iksweb th {
      body{
         width: 300px;
     }
-    table{
+    table.iksweb{
         width: 300px;
     }
     img{
-        width: 200px;
+        width: 340px;
     }
     header{
         width: 90%;
-        height: 100%;
+        
     }
     .bloch{
         width: 100%;
