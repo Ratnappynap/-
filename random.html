@@ -31,17 +31,17 @@
 </body>
     <script>
         ‎const numbers = [27, 2, 30, 8, 38, 13, 43];
-‎        const generateBtn = document.getElementById('generateBtn');
-‎        const resultElement = document.getElementById('result');
+‎        const generateBtn = document.getElementById('generateBtn');
+‎        const resultElement = document.getElementById('result');
 ‎
-‎        generateBtn.addEventListener('click', function() {
-‎            const randomIndex = Math.floor(Math.random() * numbers.length);
-‎            const randomNumber = numbers[randomIndex];
-‎            resultElement.textContent = `Ваше правило: ${randomNumber}`;
-‎            generateBtn.style.display = 'none';
-‎            // Также выводим в консоль, как в вашем примере
-‎            console.log(randomIndex, randomNumber);
-‎        });
+‎        generateBtn.addEventListener('click', function() {
+‎            const randomIndex = Math.floor(Math.random() * numbers.length);
+‎            const randomNumber = numbers[randomIndex];
+‎            resultElement.textContent = `Ваша цифра: ${randomNumber}`;
+‎            generateBtn.style.display = 'none';
+‎            // Также выводим в консоль, как в вашем примере
+‎            console.log(randomIndex, randomNumber);
+‎        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
