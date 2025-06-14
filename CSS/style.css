@@ -170,6 +170,9 @@ table.iksweb th {
     h1,h2,h3,p{
         width: 40%;
     }
+    body{
+        width: 50%;
+    }
     img{
         width: 30%;
     }
@@ -185,6 +188,10 @@ table.iksweb th {
         width: 100%;
         margin: 0;
     }
+.second{
+    margin: 0;
+}
+    
 }
 
 @media (max-width: 360px){
@@ -194,6 +201,9 @@ table.iksweb th {
     h1,h2,h3,p{
         width: 40%;
     }
+     body{
+        width: 50%;
+    }
     img{
         width: 30%;
     }
@@ -209,4 +219,8 @@ table.iksweb th {
         width: 100%;
         margin: 0;
     }
+.second{
+    margin: 0;
+}
+
 }
